@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Noto Sans";
+}
+
+#container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5%;
+  background-color: whitesmoke;
+}
+
+#portfolio {
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 50%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 5px;
+  background-image: url(images/coding.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  width: 30%;
+  border: 5px solid rgba(184, 180, 180, 0.5);
+  border-radius: 50%;
+  margin-top: 20%;
+}
+
+h1 {
+  margin-top: 5%;
+}
+
+sub {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#details {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  margin: 5% 0;
+  padding: 0 5%;
+}
+
+#dark-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+#send:hover {
+  background-color: white;
+  color: black;
+}
+
+.buttons {
+  margin: 5%;
+}
+
+.rounded-circle {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 3%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:nth-child(1):hover {
+  color: #4267b2;
+}
+
+button:nth-child(2):hover {
+  color: #c13584;
+}
+
+button:nth-child(3):hover {
+  color: #0a66c2;
+}
+
+input,
+textarea {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.modal-body > h3 {
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+#close {
+  float: right;
+}
+
+#close:hover {
+  color: black;
+}
+
+#toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label {
+  background-color: white;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  background-color: #191919;
+}
+
+.label {
+  height: 26px;
+  width: 50px;
+  display: flex;
+  background-color: #191919;
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ball {
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+body.dark {
+  background-color: #191919;
+}
+
+#portfolio.dark {
+  border: 1px solid white;
+  background-image: url(images/coding_white.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+  background-color: #191919;
+  color: white;
+}
+
+#dark-btn.dark {
+  background-color: white;
+  color: #191919;
+}
+
+#send.dark {
+  background-color: white;
+  color: #191919;
+}
+
+#close.dark {
+  color: white;
+}
+
+#close.dark:hover {
+  border: 1px solid white;
+}
+
+#dark-btn.dark:hover {
+  background-color: #191919;
+  color: white;
+  border: 1px solid white;
+}
+
+#send.dark:hover {
+  background-color: #191919;
+  color: white;
+  border: 1px solid white;
+}
+
+#content.dark {
+  background-color: #191919;
+}
+
+input.dark {
+  background-color: #191919;
+  border: 1px solid white;
+}
+
+textarea.dark {
+  background-color: #191919;
+  border: 1px solid white;
+}
+
+.dark::-webkit-input-placeholder {
+  color: white;
+}
+
+.rounded-circle.dark {
+  border: 1px solid white;
+  color: white;
+}
+
+button:nth-child(1).dark:hover {
+  color: #4267b2;
+  border: 1px solid #4267b2;
+}
+
+button:nth-child(2).dark:hover {
+  color: #c13584;
+  border: 1px solid #c13584;
+}
+
+button:nth-child(3).dark:hover {
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+}
+
+sub.dark {
+  color: rgb(212, 207, 207);
+}
+
+#info.dark {
+  color: rgb(212, 207, 207);
+}
+
+#details.dark {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #portfolio {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #container {
+    padding: 0;
+  }
+
+  #portfolio {
+    width: 100%;
+  }
+}
