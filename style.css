@@ -23,7 +23,7 @@ body {
   text-align: center;
   padding: 2%;
   border-radius: 5px;
-  background-image: url(coding.jpg);
+  background-image: url(images/coding.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -33,10 +33,31 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.img {
   width: 30%;
   border: 5px solid rgba(184, 180, 180, 0.5);
   border-radius: 50%;
   margin-top: 20%;
+}
+
+.project-img {
+  border-radius: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+.img-container {
+  margin-bottom: 5%;
 }
 
 h1 {
@@ -65,11 +86,7 @@ p {
   padding: 0 5%;
 }
 
-#dark-btn:hover {
-  background-color: white;
-  color: black;
-}
-
+.dark-btn:hover,
 #send:hover {
   background-color: white;
   color: black;
@@ -120,11 +137,17 @@ textarea {
   margin-top: 10%;
 }
 
-#close {
+.github:hover {
+  text-decoration: line-through;
+}
+
+#close,
+#close2 {
   float: right;
 }
 
-#close:hover {
+#close:hover,
+#close2:hover {
   color: black;
 }
 
@@ -187,9 +210,13 @@ body.dark {
   background-color: #191919;
 }
 
+#container.dark {
+  background-color: #191919;
+}
+
 #portfolio.dark {
   border: 1px solid white;
-  background-image: url(coding_white.jpeg);
+  background-image: url(images/coding_white.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -198,45 +225,39 @@ body.dark {
   color: white;
 }
 
-#dark-btn.dark {
-  background-color: white;
-  color: #191919;
+.project-img.dark {
+  border: 3px solid white;
 }
 
+.dark-btn.dark,
 #send.dark {
   background-color: white;
   color: #191919;
 }
 
-#close.dark {
+#close.dark,
+#close2.dark {
   color: white;
 }
 
-#close.dark:hover {
+#close.dark:hover,
+#close2.dark:hover {
   border: 1px solid white;
 }
 
-#dark-btn.dark:hover {
-  background-color: #191919;
-  color: white;
-  border: 1px solid white;
-}
-
+.dark-btn.dark:hover,
 #send.dark:hover {
   background-color: #191919;
   color: white;
   border: 1px solid white;
 }
 
-#content.dark {
+#content.dark,
+#content2.dark {
   background-color: #191919;
 }
 
-input.dark {
-  background-color: #191919;
-  border: 1px solid white;
-}
-
+input.dark,
 textarea.dark {
   background-color: #191919;
   border: 1px solid white;
@@ -266,10 +287,7 @@ button:nth-child(3).dark:hover {
   border: 1px solid #0a66c2;
 }
 
-sub.dark {
-  color: rgb(212, 207, 207);
-}
-
+sub.dark,
 #info.dark {
   color: rgb(212, 207, 207);
 }

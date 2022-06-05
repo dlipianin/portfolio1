@@ -26,12 +26,12 @@
     <div id="container">
       <div id="portfolio">
         <section id="main">
-          <img src="profilo.jpeg" alt="" class="img" />
+          <img src="images/profilo.jpeg" alt="" class="img" />
           <h1>Diana D'Estefano</h1>
           <sub>Programmer - Computer Engineer - Writer</sub>
           <div id="info">
             <p><i class="fa-solid fa-location-dot"></i> Italy</p>
-            <p><i class="fa-solid fa-mobile-screen"></i> +39 348*****26</p>
+            <p><i class="fa-solid fa-mobile-screen"></i> <a href="tel:+39348*****26">+39 348*****26</a> </p>
           </div>
           <p id="details">
             Lorem ipsum dolor sit amet, sed magna etiam adipiscing elit. Mauris
@@ -41,12 +41,18 @@
           </p>
           <button
             type="button"
-            class="btn btn-dark rounded-pill"
+            class="btn btn-dark rounded-pill dark-btn"
             data-toggle="modal"
             data-target="#exampleModal"
-            id="dark-btn"
           >
             Get In Touch
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark rounded-pill dark-btn"
+            data-toggle="modal"
+            data-target="#exampleModal2"
+          >My Projects
           </button>
           <div
             class="modal fade"
@@ -101,6 +107,42 @@
                     class="form-control"
                   ></textarea>
                   <button type="submit" class="btn btn-dark rounded-pill" id="send">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel2"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" id="content2">
+                <div class="modal-body">
+                  <button type="button" class="close btn" data-dismiss="modal" aria-label="Close" id="close2">
+                    <span aria-hidden="true"><i class="fa-solid fa-xmark"></i
+                      ></span>
+                  </button>
+                  <h3>My Projects</h3>
+                  <p><a href="https://github.com/dlipianin" target="_blank" class="github"><i class="fa-solid fa-link"></i> Click here to visit my GitHub profile</a></p>
+                  <div class="img-container">
+                    <a href="https://dlipianin.github.io/pig-game/" target="_blank">
+                      <img src="images/pig-game.png" alt="" class="project-img">
+                    </a>
+                  </div>
+                  <div class="img-container">
+                    <a href="https://dlipianin.github.io/play/" target="_blank">
+                      <img src="images/play.png" alt="" class="project-img">
+                    </a>
+                  </div>
+                  <div class="img-container">
+                    <a href="https://dlipianin.github.io/tip-calculator/" target="_blank">
+                      <img src="images/tip-calculator.png" alt="" class="project-img">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
