@@ -23,7 +23,7 @@ body {
   text-align: center;
   padding: 2%;
   border-radius: 5px;
-  background-image: url(images/coding.jpg);
+  background-image: url(coding.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -189,7 +189,7 @@ body.dark {
 
 #portfolio.dark {
   border: 1px solid white;
-  background-image: url(images/coding_white.jpeg);
+  background-image: url(coding_white.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
